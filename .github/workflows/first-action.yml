@@ -1,7 +1,7 @@
 name: First Workflow
-on: workflow_dispatch
-  push:
-    branches: ["main/master"]      
+on:
+  push: 
+    branches: [ main/master ]    
 jobs:
   first-job:
     runs-on: ubuntu-latest
@@ -9,4 +9,4 @@ jobs:
       - name: Print greeting
         run: echo "Hello World!"
       - name: Print goodbye
-        run: echo "Done Dude bye!"  
+        run: echo "Done - bye!"
